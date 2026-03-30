@@ -149,8 +149,21 @@ public class Unit4 {
      * @return true if the string is a palindrome, false otherwise
      */
     public boolean isPalindrome(String str) {
+    if (str.length() <= 1) {
+          return true;
+        }
+        int left = 0;
+        int right = str.length() - 1;
+        while (left < right) {
+       if (str.charAt(left) != str.charAt(right)) {
+          return false;
+      }
+      left++;
+    right--;
+        }
+    
         // TODO: Implement this method
-        return false;
+        return true;
     }
 
     /**
