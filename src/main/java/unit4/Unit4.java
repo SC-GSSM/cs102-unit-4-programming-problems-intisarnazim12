@@ -193,6 +193,24 @@ public class Unit4 {
      * @param n the size parameter for the patterns
      */
     public void printAsteriskPatterns(int n) {
+       if (n <= 0) return;
+
+       for (int i = 0; i < n; i++) {
+          System.out.print("*");
+        }
+        System.out.println();
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n; col++) {
+           System.out.print("*");
+     }
+     System.out.println();
+        }
+        for (int row = 1; row <= n; row++) {
+    for (int col = 1; col <= row; col++) {
+       System.out.print("*");
+ }
+    System.out.println();
+        }
         // TODO: Implement this method
     }
 
