@@ -29,8 +29,13 @@ public class Unit4 {
      * @return the sum of integers from 1 to n
      */
     public int sumNumbers(int n) {
-        // TODO: Implement this method
-        return 0;
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+      
+            // TODO: Implement this method
+        return sum;
     }
 
     /**
@@ -54,8 +59,12 @@ public class Unit4 {
      * @return the repeated string
      */
     public String repeatString(String str, int n) {
+        String result = "";
+        for (int i = 0; i < n; i++) {
+      result += str;
+        }
         // TODO: Implement this method
-        return "";
+        return result;
     }
 
     /**
@@ -78,8 +87,12 @@ public class Unit4 {
      * @return the factorial of n
      */
     public int findFactorial(int n) {
+      int result = 1;
+      for (int i = 1; i <= n; i++) {
+      result *= i; 
+      }
         // TODO: Implement this method
-        return 0;
+        return result;
     }
 
     /**
