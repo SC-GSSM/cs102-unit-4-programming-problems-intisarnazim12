@@ -235,6 +235,12 @@ public class Unit4 {
      * @param n the size of the table (n x n)
      */
     public void multiplicationTable(int n) {
+      for (int row = 1; row <= n; row++) {
+        for (int col = 1; col <= n; col++) {
+                int product = row * col;
+       System.out.print(product + "    ");
+            }  
+            System.out.println();
         // TODO: Implement this method
     }
 }
